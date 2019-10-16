@@ -1,0 +1,76 @@
+/*John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+9/17/19
+This is my css file for my page. In here I go through each tag and style them.
+I added borders to the paragraphs and homework links, and the entire body of the page. I added color to the background,
+borders, and when you hover over the homework links. I made the text of the paragraphs Times new roman.
+I also centered everything on the page. The page is resizable. I also made h1, h2, and h3 have color.
+The link to my page is http://cs.uml.edu/~jkratz/HW4*/
+
+
+body {
+  background-color: lightblue;
+  border-top: 8px solid purple;
+  border-bottom: 8px solid purple;
+  border-left: 8px solid purple;
+  border-right: 8px solid purple;
+  text-align: center;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+h2{
+  color: navy;
+  text-align: center;
+}
+
+p{
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.15em;
+  border-style: double;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 10px;
+}
+
+h3{
+  color: navy;
+  text-align: center;
+
+}
+
+a:hover {
+	color: navy;
+}
+img{
+  border: 1px black;
+}
+
+a{
+  text-decoration: none;
+	color: black;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  list-style-type: upper-roman;
+
+}
+
+ul{
+  text-align: center;
+  border-style: double;
+  color: purple;
+  margin-left: 155px;
+  margin-right: 155px;
+
+}
