@@ -1,0 +1,103 @@
+/*
+John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+11/14/19
+*/
+
+
+#content {
+    margin: 100px;
+    margin-bottom: 75px;
+    padding-bottom: 20px;
+    background-color: aqua;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+body {
+    background-color: Aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 650px;
+    min-height: 650px;
+}
+
+h1 {
+   text-align: center;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+label{
+  text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+td {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+tr:nth-child(even){background-color:DarkCyan}
+tr:nth-child(odd){background-color: LightGreen}
+td:first-child, tr:first-child{background-color: HotPink}
+
+.error {
+    color: red;
+    text-align: center;
+    font-style: italic;
+}
+
+input.error {
+    border: 2px solid red;
+    background-color: yellow;
+}
+
+input[type=number] {
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 15pt;
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15pt;
+    color:white;
+    background-color: black;
+    width: 30%;
+    margin-top: 2%;
+
+}
+
+.inputForTable {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#table {
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
