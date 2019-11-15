@@ -1,0 +1,50 @@
+
+<!--John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+11/14/19
+-->
+
+<html lang= "en">
+  <head>
+      <link rel="stylesheet" type= "text/css" href="HW6.css">
+      <title>Assignment 6</title>
+  </head>
+    <body>
+          <div id = "content">
+                <div id= "inputTitle">
+                    <h1>Enter Inputs Below to Generate a Multiplication Table</h1>
+                    <h2>The Input Can Be Any Integer Between -10000 And 10000</h2>
+                </div>
+                <!-- Get Input data from the user -->
+                <div class = "inputForTable">
+                    <form onsubmit='return false'>
+                        <label> Starting Horizontal Multiplier :</label>
+                            <input type="number" name="Starting Horizontal Multiplier" id="startHorizontal" value='1'></br>
+                        <label> Ending Horizontal Multiplier :</label>
+                            <input type="number" name="Ending Horizontal Multiplier" id="endHorizontal" value='20'> </br>
+                        <label> Starting Vertical Multiplier :</label>
+                            <input type="number" name="Starting Vertial Multiplier" id="startVertical" value='1' > </br>
+                        <label> Ending Vertical Multiplier :</label>
+                            <input type="number" name="Ending Vertical Multiplier" id="endVertical" value='20'</br>
+                        <input type="submit" value="Submit" onclick='return buildTable()'>
+                    </form>
+                </div>
+                <div id="tableTitle">
+
+                    <!-- Multiplication Table out will be below -->
+                    <h2>Table</h2>
+                    <div id="table"></div>
+
+                    <!-- jQuery for Bootstrap's JavaScript plugins -->
+                    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+                    <!-- JavaScript gets compiled here -->
+                    <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+                    <!-- this loads the JSON data into the HTML document. -->
+                    <script type='text/javascript' src="HW6.js"></script>
+                </div>
+            </div>
+    </body>
+</html>
