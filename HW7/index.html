@@ -1,0 +1,74 @@
+
+
+<!--John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+11/14/19
+-->
+
+<html lang= "en">
+  <head>
+      <link rel="stylesheet" type= "text/css" href="HW6.css">
+      <title>Assignment 7</title>
+  </head>
+    <body>
+          <div id = "content">
+                <div id= "inputTitle">
+                    <h1>Enter Inputs Below to Generate a Multiplication Table</h1>
+                    <h2>The Input Can Be Any Integer Between -10000 And 10000</h2>
+                </div>
+                <!-- Get Input data from the user -->
+                <div class = "inputForTable">
+                    <form id="mult_form" name="mult_form" method="GET">
+                    <div>
+                        <label> Starting Horizontal Multiplier :</label>
+                        <input type="number" id="startHorizontal" name="startHorizontal" value="" required>
+                    </div>
+
+                    <div>
+                        <label> Ending Horizontal Multiplier :</label>
+                        <input type="number" id="endHorizontal"  name="endHorizontal" value="" required>
+                    </div>
+
+                    <div>
+                        <label> Starting Vertical Multiplier :</label>
+                        <input type="number"  id="startVertical" name="startVertical" value="" required>
+
+                    <div>
+
+                    <div>
+                        <label> Ending Vertical Multiplier :</label>
+                        <input type="number" id="endVertical" name="endVertical" value="" required>
+                    </div>
+                        <input id="button_submit" class="submit_button" type="submit" value="Submit">
+                    </form>
+                    <div id="warning_msg"></div>
+                  </div>
+                  <div id="tableTitle">
+
+                    <!-- Multiplication Table out will be below -->
+                    <h2>Table</h2>
+                    <div id="table"></div>
+
+                    <!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+                          <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+                          <!-- Latest compiled and minified JavaScript -->
+                          <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+                          <!-- jQuery Validation plugin -->
+                          <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+                          <script type='text/javascript' src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+
+                          <!-- JS file that loads up the JSON data into the HTML document. -->
+                          <script type='text/javascript' src="HW6.js"></script>
+
+                          <script>
+                          $(document).ready(function() {
+                              validation();
+                          });
+                          </script>
+                </div>
+            </div>
+    </body>
+</html>
