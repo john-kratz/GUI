@@ -1,0 +1,138 @@
+
+<!--
+John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+11/14/19
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+
+   <link rel="stylesheet" type="text/css"
+   href="http://fonts.googleapis.com/css?family=Advent+Pro%7CBangers%7CSlackey%7CSigmar+One%7CRighteous%7CUbuntu">
+
+  <!--  Configuration -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!--  Custom Title Bar -->
+  <title>Assignment 9</title>
+
+  <!--  Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!--  Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+  <!--  jQuery UI Theme -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.min.css">
+
+  <!--  CSS file to override stuff, different file so I can modify stuff and rewrite the CSS. -->
+  <link rel="stylesheet" href="hw9.css">
+
+
+  <link rel="shortcut icon" href="img/scrabble.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!--  Navbar div. See html/navbar.html for that code. It gets loaded into this
+        div by the JS at the bottom of this page. -->
+  <div id="NavBarHeader"></div>
+
+    <!-- First row - Scrabble -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="name">
+          <span class="highlight_fun">SCRABBLE</span>
+        </h1>
+        <br>
+        <br>
+
+    <!-- Second row - the Scrabble game board -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="center_text_images">
+          <img class="resize_board" id="the_board" src="img/scrabble/Scrabble_Board_OneLine.png">
+          <div id="board"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+        <!-- Fourth row - the Scrabble pieces -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="center_text_images">
+              <img class="resize_rack" id="the_rack" src="img/scrabble/Scrabble_Rack_flat.png">
+              <div id="rack"></div>
+            </div>
+          </div>
+        </div>
+
+    <!-- Adding spaces to keep the board / rack separate -->
+
+    <!-- Third row - Scoring -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="highlight_centered">Word: <span id="word">____</span> </div>
+        <div class="highlight_centered">Score: <span id="score">0</span> </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+<br><br>
+
+    <!-- TODO, add buttons for stuff. -->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="center_text_images">
+
+          <button onclick="javascript: alert('NOT INCLUDED');">Submit Word</button>
+          <button onclick="javascript: alert('NOT INCLUDED');">Reset Tiles</button>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+
+    <!-- Adding spaces to keep the board / rack separate -->
+    <br><br>
+
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins). -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <!-- jQuery Validation plugin -->
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+  <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
+
+  <!-- jQuery UI Slider and Tab Wigets -->
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <!-- JS file to handle the scrabble game. -->
+  <script type='text/javascript' src="hw9.js"></script>
+
+  <!-- Load the header/footer when the page is ready. Also load the validate() function -->
+  <script>
+
+    $( document ).ready(function() {
+        $("#NavBarHeader").load("html/navbar.html");
+        $("#TheFooter").load("html/footer.html");
+
+        loadPieces();     // Load up the 7 random Scrabble pieces.
+        loadTargets();   // Load up the 15 targets for the Scrabble pieces.
+    });
+  </script>
+
+</body>
+</html>
