@@ -1,0 +1,224 @@
+/*
+John Kratz
+john_kratz@student.uml.edu
+91.61 GUI Programming I
+11/14/19
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+body {
+
+  background-color: Aquamarine;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: "Advent Pro";
+}
+
+body > .container {
+  padding: 65px 10px 0;
+}
+
+body > .row {
+  margin: 10px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+
+.center_text_images {
+  margin: auto;
+  text-align: center;
+}
+
+
+.resize_rack {
+  height: 125px;
+  width: 1200px;
+}
+
+.pieces {
+  height: 100px;
+  width: 100px;
+}
+
+.droppable {
+  height: 125px;
+  width: 118px;
+}
+
+button {
+  color: black;
+  font-family: "Advent Pro";
+  font-size: 150%;
+  font-weight: 900;
+  text-align: center;
+  height: 75px;
+  width: 200px;
+}
+
+
+.highlight_fun {
+  background-color: DarkOrchid;
+  font-family: "Sigmar One";
+  font-size: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.about {
+  color: white;
+  text-align: center;
+}
+
+.center_text {
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.center_text_nohighlight {
+  color: black;
+  font-size: 200%;
+  text-align: center;
+}
+
+.center_text_small {
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 120%;
+  font-weight: 900;
+  text-align: center;
+}
+
+h1.name {
+  color: white;
+  font-family: "Ubuntu";
+  font-size: 750%;
+  text-align: center;
+}
+
+.highlight {
+  background-color: black;
+}
+
+.highlight_red {
+  background-color: black;
+  color: red;
+  font-family: "Righteous";
+}
+
+.highlight_gold {
+  background-color: #e5c100;
+  color: #990000;
+  font-family: "Sigmar One";
+  font-size: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.highlight_centered {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.highlight_centered_small {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  text-align: center;
+}
+
+.highlight_centered_margins {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  margin: 10px;
+  text-align: center;
+}
+
+.highlight_left_aligned {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: left;
+}
+
+.highlight_right_aligned {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  margin-right: -20px;
+  text-align: right;
+}
+
+.highlight_text_underline {
+  background: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.highlight_text_underline_centered {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+  font-weight: 900;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.left_align {
+  color: white;
+  text-align: left;
+  font-family: "Advent Pro";
+  font-size: 200%;
+}
+
+.right_align {
+  color: white;
+  text-align: left;
+  font-family: "Advent Pro";
+  font-size: 200%;
+}
+
+.white_text {
+  background-color: black;
+  color: white;
+  font-family: "Advent Pro";
+  font-size: 200%;
+}
